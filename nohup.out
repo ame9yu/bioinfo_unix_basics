@@ -1,0 +1,133 @@
+Aligning...
+Thu Jul 27 16:55:21 PDT 2017
+/home/yuq005/chip-align/process_chip_from_fastq.sh: line 28: [: ==: unary operator expected
+stat: No such file or directory
+Warning: Could not open read file "0" for reading; skipping...
+Error: No input read files were valid
+(ERR): bowtie2-align exited with value 1
+[main_samview] fail to read the header from "-".
+Aligning...
+Thu Jul 27 16:56:13 PDT 2017
+/home/yuq005/chip-align/process_chip_from_fastq.sh: line 28: [: ==: unary operator expected
+stat: No such file or directory
+Warning: Could not open read file "0" for reading; skipping...
+Error: No input read files were valid
+(ERR): bowtie2-align exited with value 1
+[main_samview] fail to read the header from "-".
+Aligning...
+Thu Jul 27 16:57:14 PDT 2017
+524386 reads; of these:
+  524386 (100.00%) were unpaired; of these:
+    88 (0.02%) aligned 0 times
+    480961 (91.72%) aligned exactly 1 time
+    43337 (8.26%) aligned >1 times
+99.98% overall alignment rate
+[Thu Jul 27 17:01:17 PDT 2017] picard.sam.SortSam INPUT=./H3K4me3_100K-chr11.bam OUTPUT=./H3K4me3_100K-chr11.sorted.bam SORT_ORDER=coordinate    VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json
+[Thu Jul 27 17:01:17 PDT 2017] Executing as yuq005@snorlax on Linux 3.10.0-514.2.2.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 1.8.0_111-b15; Picard version: 2.8.1-SNAPSHOT
+INFO	2017-07-27 17:01:38	SortSam	Finished reading inputs, merging and writing to output now.
+[Thu Jul 27 17:01:45 PDT 2017] picard.sam.SortSam done. Elapsed time: 0.47 minutes.
+Runtime.totalMemory()=2550136832
+[Thu Jul 27 17:01:46 PDT 2017] picard.sam.markduplicates.MarkDuplicates INPUT=[./H3K4me3_100K-chr11.sorted.bam] OUTPUT=./H3K4me3_100K-chr11.sorted.flagged.bam METRICS_FILE=./H3K4me3_100K-chr11.sorted.flagged.metrics.txt    MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP=50000 MAX_FILE_HANDLES_FOR_READ_ENDS_MAP=8000 SORTING_COLLECTION_SIZE_RATIO=0.25 REMOVE_SEQUENCING_DUPLICATES=false TAGGING_POLICY=DontTag REMOVE_DUPLICATES=false ASSUME_SORTED=false DUPLICATE_SCORING_STRATEGY=SUM_OF_BASE_QUALITIES PROGRAM_RECORD_ID=MarkDuplicates PROGRAM_GROUP_NAME=MarkDuplicates READ_NAME_REGEX=<optimized capture of last three ':' separated fields as numeric values> OPTICAL_DUPLICATE_PIXEL_DISTANCE=100 VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json
+[Thu Jul 27 17:01:46 PDT 2017] Executing as yuq005@snorlax on Linux 3.10.0-514.2.2.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 1.8.0_111-b15; Picard version: 2.8.1-SNAPSHOT
+INFO	2017-07-27 17:01:46	MarkDuplicates	Start of doWork freeMemory: 2006597704; totalMemory: 2022178816; maxMemory: 28631367680
+INFO	2017-07-27 17:01:46	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2017-07-27 17:01:46	MarkDuplicates	Will retain up to 110120644 data points before spilling to disk.
+INFO	2017-07-27 17:02:14	MarkDuplicates	Read 524298 records. 0 pairs never matched.
+INFO	2017-07-27 17:02:15	MarkDuplicates	After buildSortedReadEndLists freeMemory: 2165222888; totalMemory: 3102736384; maxMemory: 28631367680
+INFO	2017-07-27 17:02:15	MarkDuplicates	Will retain up to 894730240 duplicate indices before spilling to disk.
+INFO	2017-07-27 17:03:50	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2017-07-27 17:03:50	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2017-07-27 17:03:51	MarkDuplicates	Sorting list of duplicate records.
+INFO	2017-07-27 17:03:53	MarkDuplicates	After generateDuplicateIndexes freeMemory: 3084261800; totalMemory: 10260840448; maxMemory: 28631367680
+INFO	2017-07-27 17:03:53	MarkDuplicates	Marking 47 records as duplicates.
+INFO	2017-07-27 17:03:53	MarkDuplicates	Found 0 optical duplicate clusters.
+INFO	2017-07-27 17:03:53	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+INFO	2017-07-27 17:04:04	MarkDuplicates	Before output close freeMemory: 10241707768; totalMemory: 10260840448; maxMemory: 28631367680
+INFO	2017-07-27 17:04:04	MarkDuplicates	After output close freeMemory: 10658045816; totalMemory: 10685513728; maxMemory: 28631367680
+[Thu Jul 27 17:04:04 PDT 2017] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 2.31 minutes.
+Runtime.totalMemory()=10685513728
+Filtering and generating TDF...
+Thu Jul 27 17:04:05 PDT 2017
+INFO [2017-07-27 17:04:16,080]  [IgvTools.java:831] [main]  Computing coverage.  File = ./F1796-H3K4me3_100K-chr11.sorted.flagged.bam
+Computing coverage.  File = ./F1796-H3K4me3_100K-chr11.sorted.flagged.bam
+INFO [2017-07-27 17:04:16,089]  [IgvTools.java:832] [main]  Max zoom = 7
+Max zoom = 7
+INFO [2017-07-27 17:04:16,090]  [IgvTools.java:833] [main]  Window size = 25
+Window size = 25
+INFO [2017-07-27 17:04:16,090]  [IgvTools.java:838] [main]  Window functions: mean 
+Window functions: mean 
+INFO [2017-07-27 17:04:16,090]  [IgvTools.java:839] [main]  Ext factor = 164
+Ext factor = 164
+INFO [2017-07-27 17:04:16,122]  [GenomeManager.java:145] [main]  Loading genome: /storage/resources/dbase/mouse/mm9/mm9.fa
+Loading genome: /storage/resources/dbase/mouse/mm9/mm9.fa
+INFO [2017-07-27 17:04:16,330]  [DirectoryManager.java:169] [main]  IGV Directory: /home/yuq005/igv
+IGV Directory: /home/yuq005/igv
+INFO [2017-07-27 17:04:16,353]  [GenomeManager.java:192] [main]  Genome loaded.  id= /storage/resources/dbase/mouse/mm9/mm9.fa
+Genome loaded.  id= /storage/resources/dbase/mouse/mm9/mm9.fa
+INFO [2017-07-27 17:04:16,438]  [Preprocessor.java:255] [main]  Processing chromosome chr10
+Processing chromosome chr10
+INFO [2017-07-27 17:04:16,681]  [Preprocessor.java:255] [main]  Processing chromosome chr11
+Processing chromosome chr11
+.INFO [2017-07-27 17:04:50,427]  [Preprocessor.java:255] [main]  Processing chromosome chr12
+Processing chromosome chr12
+INFO [2017-07-27 17:04:50,462]  [Preprocessor.java:255] [main]  Processing chromosome chr13
+Processing chromosome chr13
+INFO [2017-07-27 17:04:50,495]  [Preprocessor.java:255] [main]  Processing chromosome chr14
+Processing chromosome chr14
+INFO [2017-07-27 17:04:50,529]  [Preprocessor.java:255] [main]  Processing chromosome chr15
+Processing chromosome chr15
+INFO [2017-07-27 17:04:50,557]  [Preprocessor.java:255] [main]  Processing chromosome chr16
+Processing chromosome chr16
+INFO [2017-07-27 17:04:50,588]  [Preprocessor.java:255] [main]  Processing chromosome chr17
+Processing chromosome chr17
+INFO [2017-07-27 17:04:50,618]  [Preprocessor.java:255] [main]  Processing chromosome chr17_random
+Processing chromosome chr17_random
+INFO [2017-07-27 17:04:50,620]  [Preprocessor.java:255] [main]  Processing chromosome chr18
+Processing chromosome chr18
+INFO [2017-07-27 17:04:51,525]  [Preprocessor.java:255] [main]  Processing chromosome chr19
+Processing chromosome chr19
+INFO [2017-07-27 17:04:51,542]  [Preprocessor.java:255] [main]  Processing chromosome chr1
+Processing chromosome chr1
+INFO [2017-07-27 17:04:51,591]  [Preprocessor.java:255] [main]  Processing chromosome chr1_random
+Processing chromosome chr1_random
+INFO [2017-07-27 17:04:51,593]  [Preprocessor.java:255] [main]  Processing chromosome chr2
+Processing chromosome chr2
+INFO [2017-07-27 17:04:51,634]  [Preprocessor.java:255] [main]  Processing chromosome chr3
+Processing chromosome chr3
+INFO [2017-07-27 17:04:51,684]  [Preprocessor.java:255] [main]  Processing chromosome chr4
+Processing chromosome chr4
+INFO [2017-07-27 17:04:51,726]  [Preprocessor.java:255] [main]  Processing chromosome chr4_random
+Processing chromosome chr4_random
+INFO [2017-07-27 17:04:51,727]  [Preprocessor.java:255] [main]  Processing chromosome chr5
+Processing chromosome chr5
+INFO [2017-07-27 17:04:51,768]  [Preprocessor.java:255] [main]  Processing chromosome chr6
+Processing chromosome chr6
+INFO [2017-07-27 17:04:51,808]  [Preprocessor.java:255] [main]  Processing chromosome chr7
+Processing chromosome chr7
+INFO [2017-07-27 17:04:51,849]  [Preprocessor.java:255] [main]  Processing chromosome chr7_random
+Processing chromosome chr7_random
+INFO [2017-07-27 17:04:51,850]  [Preprocessor.java:255] [main]  Processing chromosome chr8
+Processing chromosome chr8
+INFO [2017-07-27 17:04:51,883]  [Preprocessor.java:255] [main]  Processing chromosome chr8_random
+Processing chromosome chr8_random
+INFO [2017-07-27 17:04:51,884]  [Preprocessor.java:255] [main]  Processing chromosome chr9
+Processing chromosome chr9
+INFO [2017-07-27 17:04:51,913]  [Preprocessor.java:255] [main]  Processing chromosome chr9_random
+Processing chromosome chr9_random
+INFO [2017-07-27 17:04:51,915]  [Preprocessor.java:255] [main]  Processing chromosome chrUn_random
+Processing chromosome chrUn_random
+INFO [2017-07-27 17:04:51,918]  [Preprocessor.java:255] [main]  Processing chromosome chrX
+Processing chromosome chrX
+INFO [2017-07-27 17:04:51,973]  [Preprocessor.java:255] [main]  Processing chromosome chrX_random
+Processing chromosome chrX_random
+INFO [2017-07-27 17:04:51,976]  [Preprocessor.java:255] [main]  Processing chromosome chrY
+Processing chromosome chrY
+INFO [2017-07-27 17:04:51,979]  [Preprocessor.java:255] [main]  Processing chromosome chrY_random
+Processing chromosome chrY_random
+INFO [2017-07-27 17:04:52,177]  [TDFWriter.java:318] [main]  Group idx: 1
+Group idx: 1
+100.0% 
+Done
+Removing Intermediate files...
+Thu Jul 27 17:04:52 PDT 2017
+rm: cannot remove ‘./H3K4me3_100K-chr11.sorted.bam.bai’: No such file or directory
