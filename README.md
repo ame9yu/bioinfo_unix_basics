@@ -2,6 +2,7 @@
 ----- Yutong Qiu, 07.11.2017 ----
 
 A. BAM <-> SAM conversion
+	
 	1. BAM -> SAM :`samtools view <bamfile>`
 	2. SAM -> BAM: `samtools view -bS <samfile> [-T ref.fa if sam does not have header]`
 
@@ -38,7 +39,7 @@ F. Search
 G. Search in less
   - In less, type `/<keyword>` . Hit enter. Hit n for the next pattern.
 	
-### Some Practices
+### Some Excercises
 * try to concatenate example_first500.bed and example_last500.bed and see if there is any differences with example.bed
 
 * Command I used to convert tab to comma:  sed 's/\t/,/g' example.bed > example.csv
