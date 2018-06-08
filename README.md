@@ -1,4 +1,4 @@
-## Basics in Bioinformatics and unix commands
+## Some basic bioinformatics commands in linux
 ----- Yutong Qiu, 07.11.2017 ----
 
 A. BAM <-> SAM conversion
