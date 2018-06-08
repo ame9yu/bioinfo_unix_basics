@@ -39,7 +39,7 @@ F. Search
 G. Search in less
   - In less, type `/<keyword>` . Hit enter. Hit n for the next pattern.
 	
-### Some Excercises
+### Some Exercises
 * try to concatenate example_first500.bed and example_last500.bed and see if there is any differences with example.bed
 
 * Command I used to convert tab to comma:  sed 's/\t/,/g' example.bed > example.csv
