@@ -42,10 +42,12 @@ G. Search in less
 ### Some Exercises
 * try to concatenate example_first500.bed and example_last500.bed and see if there is any differences with example.bed
 
-###
-* Command I used to convert tab to comma:  sed 's/\t/,/g' example.bed > example.csv
-* I can never learn how to use 'sed' but google can always help me ;)
-* 'sed' is a stream editor that is used to perform basic text transformation. In my opinion it is itself a specialized language for text processing. 
+### others
+* Command I used to convert tab to comma:  `sed 's/\t/,/g' example.bed > example.csv`
+	* I can never learn how to use 'sed' but google can always help me ;)
+	* 'sed' is a stream editor that is used to perform basic text transformation. In my opinion it is itself a specialized language for text processing. 
+	
+* `awk` is also a very usefual tool for text processing. 
 
 * default output to standard out. Remember to use '>' to redirect output to file
 
