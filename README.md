@@ -1,47 +1,44 @@
-[------- README -------]
-[-- Writen by Yutong --]
-[----- 07.11.2017 -----]
+## Basics in Bioinformatics and unix commands
+----- Yutong Qiu, 07.11.2017 ----
 
 A. BAM <-> SAM conversion
-	1. BAM -> SAM
-	   samtools view <bamfile>
-	2. SAM -> BAM
-	   samtools view -b <samfile> [-T ref.fa if sam does not have header]
+	1. BAM -> SAM :`samtools view <bamfile>`
+	2. SAM -> BAM: `samtools view -bS <samfile> [-T ref.fa if sam does not have header]`
 
 B. Get first few lines of a file
+
 	head -n <number of lines> <file>
-		or
 	cat <file> | head -n <number of lines>
 	
 C. Get last few lines of a file
-	tail -n <number of lines> <file>
+	`tail -n <number of lines> <file`
 	
-	* a negative number gives you all the lines except the last x lines	
+    * a negative number gives you all the lines except the last x lines	
 
-D. Concatenate two or more files
-	cat <file1> <file2> ...
+D. Concatenate two or more files `cat <file1> <file2> ...`
 
 E. Get word count/line count
-	wc <file>
+	`wc <file>`
 		or
-	cat <file> | wc
+	`cat <file> | wc -l (line count)`
 
 F. Get certain columns of bed file
-	cat <file> | cut -f <1-based column index> -d <delimiter character>
+	`cat <file> | cut -f <1-based column index> -d <delimiter character>`
+	
 	example: cat example.csv | cut -f 1,3 -d ','
 
 G. Compare files
-	diff <file1> <file2>
+	`diff <file1> <file2>`
+	
 	example: diff diff.a diff.b
 
 F. Search
-	cat <file> | grep <keyword>
+	`cat <file> | grep <keyword>`
 
 G. Search in less
-	In less,
-	  type /<keyword> . Hit enter.
-	  Hit n for the next pattern.
+  - In less, type `/<keyword>` . Hit enter. Hit n for the next pattern.
 	
+### Some Practices
 * try to concatenate example_first500.bed and example_last500.bed and see if there is any differences with example.bed
 
 * Command I used to convert tab to comma:  sed 's/\t/,/g' example.bed > example.csv
@@ -51,6 +48,8 @@ G. Search in less
 * default output to standard out. Remember to use '>' to redirect output to file
 
 * some more useful commands:
+
+	```shell
 	ls -ltrh <directory, default: current working directory(wd)>
 		option meaning: Long, Timely, Reversed, Humanreadable
 	top
@@ -67,3 +66,4 @@ G. Search in less
 		zip/unzip files
 	chmod
 		change permission
+	```
